@@ -1,0 +1,6 @@
+Date date = new Date();
+SpinnerDateModel sm = new SpinnerDateModel(date, null, null, Calendar.HOUR_OF_DAY);
+timer = new javax.swing.JSpinner(sm);
+JSpinner.DateEditor de = new JSpinner.DateEditor(timer, "HH:mm:ss");
+timer.setEditor(de);
+getContentPane().add(timer, new org.netbeans.lib.awtextra.AbsoluteConstraints(464, 309, 108, -1));
